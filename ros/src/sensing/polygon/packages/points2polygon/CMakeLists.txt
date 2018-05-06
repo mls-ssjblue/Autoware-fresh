@@ -35,6 +35,6 @@ link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
 add_executable(points2polygon nodes/points2polygon/points2polygon.cpp)
-target_link_libraries(points2polygon ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${Qt5Core_LIBRARIES})
+target_link_libraries(points2polygon ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${Qt5Core_LIBRARIES} pthread)
 add_dependencies(points2polygon ${catkin_EXPORTED_TARGETS})
 endif()

@@ -29,7 +29,8 @@ include_directories(
     include
 )
 
-SET(CMAKE_CXX_FLAGS "-std=c++11 -O2 -g -Wall ${CMAKE_CXX_FLAGS}")
+SET(CMAKE_CXX_FLAGS "-std=c++11 -O2 -g -Wall ${CMAKE_CXX_FLAGS} -fPIC")
+#CMAKE_CXX_FLAGS:STRING=-fPIC
 
 link_directories(${PCL_LIBRARY_DIRS})
 
